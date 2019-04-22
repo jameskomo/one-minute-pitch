@@ -81,13 +81,13 @@ class Comment(db.Model):
         return f"Comment : id: {self.id} comment: {self.description}"
 
 
-# class Upvote(db.Model):
-#     __tablename__ = 'upvotes'
+class Upvote(db.Model):
+    __tablename__ = 'upvotes'
 
-#     id = db.Column(db.Integer,primary_key=True)
-#     upvote = db.Column(db.Integer,default=1)
-#     pitch_id = db.Column(db.Integer,db.ForeignKey('pitches.id'))
-#     user_id = db.Column(db.Integer,db.ForeignKey('users.id'))
+    id = db.Column(db.Integer,primary_key=True)
+    upvote = db.Column(db.Integer,default=1)
+    pitch_id = db.Column(db.Integer,db.ForeignKey('pitches.id'))
+    user_id = db.Column(db.Integer,db.ForeignKey('users.id'))
 
     def save_upvotes(self):
         db.session.add(self)
@@ -132,18 +132,18 @@ class Downvote(db.Model):
         downvote_pitch.save_downvotes()
 
     
-    @classmethod
-    def get_downvotes(cls,id):
-        downvote = Downvote.query.filter_by(pitch_id=id).all()
-        return downvote
+    # @classmethod
+    # def get_downvotes(cls,id):
+    #     downvote = Downvote.query.filter_by(pitch_id=id).all()
+    #     return downvote
 
-    @classmethod
-    def get_all_downvotes(cls,pitch_id):
-        downvote = Downvote.query.order_by('id').all()
-        return downvote
+    # @classmethod
+    # def get_all_downvotes(cls,pitch_id):
+    #     downvote = Downvote.query.order_by('id').all()
+    #     return downvote
 
-    def __repr__(self):
-        return f'{self.user_id}:{self.pitch_id}'
+    # def __repr__(self):
+    #     return f'{self.user_id}:{self.pitch_id}'
 
 
 
