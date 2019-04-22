@@ -27,4 +27,4 @@ class UserModelTest(unittest.TestCase):
 
 
     def test_password_verify(self):
-        self.assertTrue(self.new_user.verify_password('liz'))
+        self.assertTrue(self.new_user.verify_password('KoMoH'))

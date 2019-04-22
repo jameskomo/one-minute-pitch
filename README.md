@@ -68,7 +68,7 @@ https://komo-pitch.herokuapp.com/
 
 ## Technologies Used
   * Python 3.6.5
-  * HTML5, CSS and Bootstrap
+  * HTML5, CSS3 and Bootstrap
   * Flask Framework
   * Postgressql
   * Heroku
