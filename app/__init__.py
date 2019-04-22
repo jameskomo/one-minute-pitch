@@ -9,14 +9,14 @@ from flask_simplemde import SimpleMDE
 
 # Instances of flask extensions
 # Instance of LoginManger and using its methods
-# login_manager = LoginManager()
-# login_manager.session_protection = 'strong'
-# login_manager.login_view = 'auth.login'
-# bootstrap = Bootstrap()
-# db = SQLAlchemy()
-# simple = SimpleMDE()
+login_manager = LoginManager()
+login_manager.session_protection = 'strong'
+login_manager.login_view = 'auth.login'
+bootstrap = Bootstrap()
+db = SQLAlchemy()
+simple = SimpleMDE()
 
-# def create_app(config_name):
+def create_app(config_name):
     '''
     Function that takes configuration setting key as an argument
     
@@ -38,7 +38,7 @@ from flask_simplemde import SimpleMDE
     db.init_app(app)
     login_manager.init_app(app)
 
-    # Regestering the main blueprint
+    # Registering the main blueprint
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
