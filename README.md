@@ -19,7 +19,6 @@ https://komo-pitch.herokuapp.com/
 ## Installation Requirements
   Clone this repository and navigate to the folder.
   Run the following commands to allow functionality of the app:-
-  * sudo add-apt-repository ppa:jonathonf/python-3.6
   * sudo apt-get update
   * sudo apt-get install python3.6
   * sudo apt-get install python3-pip
