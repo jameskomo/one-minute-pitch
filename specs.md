@@ -34,7 +34,7 @@ User Stories
 Installation
 ========
 
-    $ git clone hhttps://github.com/jameskomo/one-minute-pitch.git
+    $ git clone https://github.com/jameskomo/one-minute-pitch.git
 
 
 Usage
@@ -52,10 +52,7 @@ Usage
 
 **Arguments:**
 
-| Name | Type | Required | Description | Default |
-| ---- | ---- | -------- | ----------- | ------- |
-| `category` | string | No | Returns the articles from this topic only and sorted by relevancy. | `(empty string)`  |
-| `news_source` | integer | No | Returns the articles from this news source only. | `(user's choice)` |
+To insert BDD table
 
 
 

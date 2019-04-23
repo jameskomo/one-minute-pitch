@@ -1,79 +1,114 @@
-# One-Minute-Pitch
-## A web application that lets users submit pitches based on different categories
-### April 22nd, 2019
+# One Minute Pitch
+
+![One Minute Pitch](https://cdn-images-1.medium.com/max/1200/1*ov4QOEqOhWf3OYtBbis-4w.jpeg)
+
+ In life, you only have 60 seconds to impress someone. 1 minute can make or break you. How do you make sure that you use your 1 minute to actually say something meaningful? This Python Flask application allows users to use that one minute wisely. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them. The pitches are organized by category- pickup lines, interview pitch, product pitch, promotion pitch among others. 
+
+You can see the live Application here [One Minute Pitch](https://komo-pitch.herokuapp.com/).
+
+Author Information
+========
+James Komo 
+
+Features
+========
+
+- Built with Python 3.6, Flask microframework
+- Shows Posted Pitches, Upvotes & Downvotes, Uer comments and categories.
+- Styled using Bootstrap
+- Uses Flask WTForms and various validators to arrest CRSF attacks.
+- Uses Flask Login extension for authentication management
+- Post pitches based on categories (`Choose from various pitch categories`)
+- Uses PostgreSQL DB, SQLAlchemy ORM and Flask Migrate
+
+User Stories
+============
+- As a user, you will be able to see the pitches other people have posted.
+- As a user, you will be able to vote on the pitch you liked and give it a downvote or upvote.
+- As a user, you will be required to be signed in for you to leave a comment
+- As a user, you will receive a welcoming email once you sign up.
+- As a user, you will be able to view the pitches you have created in your profile page.
+- As a user, you will be able to comment on the different pitches and leave feedback.
+- As a user, you will be able to submit a pitch in any category.
+- As a user, you will be able to view the different categories.
 
 
-# Author
-  **[Komo](https://github.com/jameskomo)**
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+You will need to:
+
+-   Have python installed
+-   Have PostgreSQL DB installed
+-   Have a terminal to interact with the app.
+-   Any text editor
+-   Browser to view
 
 
-## Link to Live Site 
-https://komo-pitch.herokuapp.com/
+Installation
+========
+
+    $ git clone https://github.com/jameskomo/one-minute-pitch.g
 
 
+Build & Deployment
+========
 
-## Description
-  This is an application that allows a user to create a pitch depending on a certain category
-  and add pitch content. A user can also be able to comment and vote on another user's pitches.
-
-## Installation Requirements
-  Clone this repository and navigate to the folder.
-  Run the following commands to allow functionality of the app:-
-  * sudo apt-get update
-  * sudo apt-get install python3.6
-  * sudo apt-get install python3-pip
-  * sudo apt-get install python3.6-venv
-  * python3.6 -m venv virtual
-  * source virtual/bin/activate
-  * pip install -r requirements.txt
- 
-
-## Dependencies
-  * alembic==0.9.9
-  * blinker==1.4
-  * click==6.7
-  * dominate==2.3.1
-  * Flask==1.0.2
-  * Flask-Bootstrap==3.3.7.1
-  * Flask-Login==0.4.1
-  * Flask-Mail==0.9.1
-  * Flask-Migrate==2.2.1
-  * Flask-Script==2.0.6
-  * Flask-SQLAlchemy==2.3.2
-  * Flask-Uploads==0.2.1
-  * Flask-WTF==0.14.2
-  * itsdangerous==0.24
-  * Jinja2==2.10
-  * Mako==1.0.7
-  * MarkupSafe==1.0
-  * psycopg2==2.7.5
-  * psycopg2-binary==2.7.5
-  * python-dateutil==2.7.3
-  * python-editor==1.0.3
-  * six==1.11.0
-  * SQLAlchemy==1.2.8
-  * visitor==0.1.3
-  * Werkzeug==0.14.1
-  * WTForms==2.2.1
+**NOTE:** You need to have fully cloned it to run it locally.
 
 
-## Technical Requirements
-   This can be found in the specs.md file.
-## User Stories
-  * A user can see the pitches posted by other people
-  * A user can eithr downvote or upvote on a pitch as long as they are signed in.
-  * A user can add comment on the different pitches .
-  * A user can view and submit pitches by category.
+    $ ./start.sh 
 
-## Technologies Used
-  * Python 3.6.5
-  * HTML5, CSS3 and Bootstrap
-  * Flask Framework
-  * Postgressql
-  * Heroku
+    # it will launch the web page from local server. You can also visit the livelink [here](https://komo-pitch.herokuapp.com/).
+ to use the system
 
-## Known Bugs
-No known bugs so far
+##Built With
 
-## Support Details
-Contact me for further help
+- Built with Python 3.6
+- Flask
+- Styled using Bootstrap
+
+Behavior Driven Development (BDD)
+==================================
+### To update
+
+| Input                                                            | Output                                                                         |
+|------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| User Visits Home Page https://komo-news-highlight.herokuapp.com/ | User sees various news sources on the homepage of the application.             |
+| User selects news source                                         | User views all news articles from the selected news source in the application. |
+| User opens news source and clicks on article                     | User sees image, description and the time a news article was created.          |
+| User clicks on an article based on news source                   | User reads the full article on the source website.                             |
+
+
+Contribute
+========
+
+If you want to add any new features, or improve existing ones, feel free to send a pull request!
+
+## License
+
+MIT License
+
+Copyright (c) 2019 James Komo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
