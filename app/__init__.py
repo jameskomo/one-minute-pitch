@@ -26,7 +26,7 @@ def create_app(config_name):
 
     # Initialising application
     app = Flask(__name__)
-
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://komo:KoMoH@localhost/one_minute_pitch'
     simple.init_app(app)
 
     # Creating the app configurations
@@ -36,7 +36,6 @@ def create_app(config_name):
     # Initialising flask extensions
     bootstrap.init_app(app)
     db.init_app(app)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://komo:KoMoH@localhost/one_minute_pitch'
     login_manager.init_app(app)
 
     # Registering the main blueprint

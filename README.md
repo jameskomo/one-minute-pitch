@@ -73,14 +73,7 @@ Build & Deployment
 
 Behavior Driven Development (BDD)
 ==================================
-### To update
-
-| Input                                                            | Output                                                                         |
-|------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| User Visits Home Page https://komo-news-highlight.herokuapp.com/ | User sees various news sources on the homepage of the application.             |
-| User selects news source                                         | User views all news articles from the selected news source in the application. |
-| User opens news source and clicks on article                     | User sees image, description and the time a news article was created.          |
-| User clicks on an article based on news source                   | User reads the full article on the source website.                             |
+### To update with BDD
 
 
 Contribute
