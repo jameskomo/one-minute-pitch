@@ -6,7 +6,7 @@ class Config:
     General configuration parent class
     '''
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://komo:12345@localhost/one_minute_pitch'
+    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://komo:KoMoH@localhost/one_minute_pitch'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     # simple mde  configurations
     SIMPLEMDE_JS_IIFE = True
@@ -46,7 +46,7 @@ class DevConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
-    # SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://postgres:KoMoH@localhost/one_minute_pitch'
+    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://komo:KoMoH@localhost/one_minute_pitch'
     DEBUG = True
 
 
